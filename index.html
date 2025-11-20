@@ -78,6 +78,12 @@
         <div class="container">
           <h1 class="title is-3">AlignSep</h1>
           <h2>
+            <a href="#In-the-Wild">
+              In-the-Wild <span style="color: red;">(NEW!!!)</span>
+            </a>
+          </h2>
+
+          <h2>
             <a href="#Compare with DAVIS">
               Compare with DAVIS <span style="color: red;">(NEW!!!)</span>
             </a>
@@ -88,14 +94,12 @@
               VGGSound-Silence <span style="color: red;">(NEW!!!)</span>
             </a>
           </h2>
-          
+
             <h2><a href="#Main-Result">A.Sound Separation with Queries of Videos</a></h2>
             <h4><a href="#VGGSound-Clean">A.1.VGGSound-Clean</a></h4>
             <h4><a href="#MUSIC-VGGSound">A.2.MUSIC-VGGSound</a></h4>
             <h4><a href="#VGGSound-Hard">A.3.VGGSound-Hard</a></h4>
-
             <h2><a href="#Temporally-Aligned">B.Temporally-Aligned Sound Separation</a></h2>
-
             <h2><a href="#Holes">C.Sound Separation without Holes</a></h2>
           </ul>
         </div>
@@ -106,6 +110,126 @@
   <section class="hero">
       <div class="hero-body">
           <div class="container">
+
+            <h1 id="In-the-Wild" class="title is-3">In-the-Wild<span style="color: red;">(NEW!!!)</span></h1>
+                <div class="grid-container">
+                    <table >
+                        <tr >
+                          <th>Original Video</th>
+                          <th>Processed Left-Half Video</th>
+                          <th>Processed Right-Half Video</th>
+
+                        </tr>
+  
+                        <tr >
+                          <th style="width: 300px; vertical-align: middle;">
+                              <video src="in_the_wild/video/real1.mp4" controls style="width: 300px; height: auto;">
+                                  您的浏览器不支持 video 标签。
+                              </video>
+                          </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <video src="in_the_wild/processed_video/real1_left.mp4" controls style="width: 300px; height: auto;">
+                                    您的浏览器不支持 video 标签。
+                                </video>
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <video src="in_the_wild/processed_video/real1_right.mp4" controls style="width: 300px; height: auto;">
+                                    您的浏览器不支持 video 标签。
+                                </video>
+                            </th>
+                        </tr>
+  
+                        <tr >
+                            <th style="width: 300px; vertical-align:middle;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="in_the_wild/audio/real1_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="in_the_wild/pred/real1_left_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="in_the_wild/pred/real1_right_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                        </tr>
+                        
+                        <tr >
+                          <th style="width: 300px; vertical-align: middle;">
+                              <video src="silence/target_video/000132_reencoded.mp4" controls style="width: 300px; height: auto;">
+                                  您的浏览器不支持 video 标签。
+                              </video>
+                          </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/mixed_wav/000132_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/target_wav/000111_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/OmniSep/000132_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/AlignSep/000132_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                        </tr>
+  
+                        <tr >
+                            <th style="width: 300px; vertical-align:middle;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/mixed_wav/000132.wav"></audio>
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/target_wav/000111.wav"></audio>
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/OmniSep/000132.wav"></audio>
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/AlignSep/000132.wav"></audio>
+                            </th>
+                        </tr>
+                        
+                        <tr >
+                          <th style="width: 300px; vertical-align: middle;">
+                              <video src="silence/target_video/000161_reencoded.mp4" controls style="width: 300px; height: auto;">
+                                  您的浏览器不支持 video 标签。
+                              </video>
+                          </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/mixed_wav/000161_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/target_wav/000111_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/OmniSep/000161_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <img src="silence/AlignSep/000161_mel.png" controls style="max-width: 100%; height: auto;">
+                            </th>
+                        </tr>
+  
+                        <tr >
+                            <th style="width: 300px; vertical-align:middle;">
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/mixed_wav/000161.wav"></audio>
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/target_wav/000111.wav"></audio>
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/OmniSep/000161.wav"></audio>
+                            </th>
+                            <th style="width: 300px; vertical-align:middle;">
+                                <audio controls style="width: 200px;"><source src="silence/AlignSep/000161.wav"></audio>
+                            </th>
+                        </tr>
+  
+  
+                    </table>
+                </div>
 
             <h1 id="Compare with DAVIS" class="title is-3">Compare with DAVIS <span style="color: red;">(NEW!!!)</span></h1>
             <h4 id="VGGSound-Clean" class="title is-4">1.VGGSound-Clean</h4>
