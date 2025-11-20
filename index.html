@@ -79,28 +79,28 @@
           <h1 class="title is-3">AlignSep</h1>
           <h2>
             <a href="#In-the-Wild">
-              In-the-Wild <span style="color: red;">(NEW!!!)</span>
+              A.In-the-Wild <span style="color: red;">(NEW!!!)</span>
             </a>
           </h2>
 
           <h2>
             <a href="#Compare with DAVIS">
-              Compare with DAVIS <span style="color: red;">(NEW!!!)</span>
+              B.Compare with DAVIS <span style="color: red;">(NEW!!!)</span>
             </a>
           </h2>
           
           <h2>
             <a href="#VGGSound-Silence">
-              VGGSound-Silence <span style="color: red;">(NEW!!!)</span>
+              C.VGGSound-Silence <span style="color: red;">(NEW!!!)</span>
             </a>
           </h2>
 
-            <h2><a href="#Main-Result">A.Sound Separation with Queries of Videos</a></h2>
-            <h4><a href="#VGGSound-Clean">A.1.VGGSound-Clean</a></h4>
-            <h4><a href="#MUSIC-VGGSound">A.2.MUSIC-VGGSound</a></h4>
-            <h4><a href="#VGGSound-Hard">A.3.VGGSound-Hard</a></h4>
-            <h2><a href="#Temporally-Aligned">B.Temporally-Aligned Sound Separation</a></h2>
-            <h2><a href="#Holes">C.Sound Separation without Holes</a></h2>
+            <h2><a href="#Main-Result">D.Sound Separation with Queries of Videos</a></h2>
+            <h4><a href="#VGGSound-Clean">D.1.VGGSound-Clean</a></h4>
+            <h4><a href="#MUSIC-VGGSound">D.2.MUSIC-VGGSound</a></h4>
+            <h4><a href="#VGGSound-Hard">D.3.VGGSound-Hard</a></h4>
+            <h2><a href="#Temporally-Aligned">E.Temporally-Aligned Sound Separation</a></h2>
+            <h2><a href="#Holes">F.Sound Separation without Holes</a></h2>
           </ul>
         </div>
     </div>
@@ -111,13 +111,14 @@
       <div class="hero-body">
           <div class="container">
 
-            <h1 id="In-the-Wild" class="title is-3">In-the-Wild <span style="color: red;">(NEW!!!)</span></h1>
+            <h1 id="In-the-Wild" class="title is-3">A.In-the-Wild <span style="color: red;">(NEW!!!)</span></h1>
+            <h6>YouTube IDs: S6OjDU44bMo, huFzlGhhhC4, jD1gNUZ7DlI</h6>
                 <div class="grid-container">
                     <table >
                         <tr >
                           <th>Original Video</th>
-                          <th>Processed Left-Half Video</th>
-                          <th>Processed Right-Half Video</th>
+                          <th>Processed Left-Half Video (Silent Dog)</th>
+                          <th>Processed Right-Half Video (Barking Dog)</th>
 
                         </tr>
   
@@ -206,8 +207,9 @@
                     </table>
                 </div>
 
-            <h1 id="Compare with DAVIS" class="title is-3">Compare with DAVIS <span style="color: red;">(NEW!!!)</span></h1>
-            <h4 id="VGGSound-Clean" class="title is-4">1.VGGSound-Clean</h4>
+            <h1 id="Compare with DAVIS" class="title is-3">B.Compare with DAVIS <span style="color: red;">(NEW!!!)</span></h1>
+            <h6>Since Davis is only capable of processing 5-second audio segments, the 8-second audio samples in the test set were segmented into two intervals (0–5 seconds and 3–8 seconds) for inference. After processing, 4-second segments were extracted from each and concatenated to form the final output.</h6>
+            <h4 id="VGGSound-Clean" class="title is-4">B.1.VGGSound-Clean</h4>
             <div class="grid-container">
                 <table >
                     <tr >
@@ -337,7 +339,7 @@
                 </table>
             </div>
             <br>
-            <h4 id="MUSIC-VGGSound" class="title is-4">2.MUSIC-VGGSound</h4>
+            <h4 id="MUSIC-VGGSound" class="title is-4">B.2.MUSIC-VGGSound</h4>
             <div class="grid-container">
                 <table >
                     <tr >
@@ -465,7 +467,7 @@
                 </table>
             </div>
             <br>
-            <h4 id="VGGSound-Hard" class="title is-4">3.VGGSound-Hard</h4>
+            <h4 id="VGGSound-Hard" class="title is-4">B.3.VGGSound-Hard</h4>
             <div class="grid-container">
                 <table >
                     <tr >
@@ -594,7 +596,7 @@
             </div>
         <br>
 
-          <h1 id="VGGSound-Silence" class="title is-3">VGGSound-Silence<span style="color: red;">(NEW!!!)</span></h1>
+          <h1 id="VGGSound-Silence" class="title is-3">C.VGGSound-Silence<span style="color: red;">(NEW!!!)</span></h1>
               <div class="grid-container">
                   <table >
                       <tr >
@@ -721,8 +723,8 @@
                   </table>
               </div>
 
-          <h1 id="Main-Result" class="title is-3">A.Sound Separation with Queries of Videos</h1>
-              <h4 id="VGGSound-Clean" class="title is-4">A.1.VGGSound-Clean</h4>
+          <h1 id="Main-Result" class="title is-3">D.Sound Separation with Queries of Videos</h1>
+              <h4 id="VGGSound-Clean" class="title is-4">D.1.VGGSound-Clean</h4>
               <div class="grid-container">
                   <table >
                       <tr >
@@ -852,7 +854,7 @@
                   </table>
               </div>
               <br>
-              <h4 id="MUSIC-VGGSound" class="title is-4">A.2.MUSIC-VGGSound</h4>
+              <h4 id="MUSIC-VGGSound" class="title is-4">D.2.MUSIC-VGGSound</h4>
               <div class="grid-container">
                   <table >
                       <tr >
@@ -980,7 +982,7 @@
                   </table>
               </div>
               <br>
-              <h4 id="VGGSound-Hard" class="title is-4">A.3.VGGSound-Hard</h4>
+              <h4 id="VGGSound-Hard" class="title is-4">D.3.VGGSound-Hard</h4>
               <div class="grid-container">
                   <table >
                       <tr >
@@ -1109,7 +1111,7 @@
               </div>
           <br>
 
-            <h1 id="Temporally-Aligned" class="title is-3">B. Temporally-Aligned Sound Separation</h1>
+            <h1 id="Temporally-Aligned" class="title is-3">E. Temporally-Aligned Sound Separation</h1>
             <div class="grid-container">
             <table>
                 <thead>
@@ -1153,7 +1155,7 @@
               </div>
           <br>
 
-          <h1 id="Holes" class="title is-3">C.Sound Separation without Holes</h1>
+          <h1 id="Holes" class="title is-3">F. Sound Separation without Holes</h1>
               <div class="grid-container">
                   <table >
                       <tr >
